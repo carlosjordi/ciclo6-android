@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">S03_Spinner</string>
+
+    <string-array name="planetas">
+        <item>Mercurio</item>
+        <item>Marte</item>
+        <item>Tierra</item>
+        <item>Jupiter</item>
+        <item>Saturno</item>
+        <item>Urano</item>
+        <item>Venus</item>
+        <item>Pluton</item>
+        <item>Neptuno</item>
+        <item>Wakanda</item>
+    </string-array>
+</resources>

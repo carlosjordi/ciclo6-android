@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:id="@+id/container">
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"/>
+
+    <Button
+        android:id="@+id/btnAgregarFragmento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar fragmento"/>
+
+    <fragment
+        android:id="@+id/fragment01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="jordi.pe.s03_fragments.AddFragment"/>
+
+    <fragment
+        android:id="@+id/fragment02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="jordi.pe.s03_fragments.AddFragment"/>
+
+    <fragment
+        android:id="@+id/fragment03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="jordi.pe.s03_fragments.AddFragment"/>
+</LinearLayout>
