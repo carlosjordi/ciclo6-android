@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">S05_DemoActionBar</string>
+    <string name="buscar">Buscar</string>
+    <string name="favorito">Favorito</string>
+    <string name="grupo">Grupo</string>
+    <string name="buscador_cambio_foco">Cambio de foco</string>
+    <string name="buscador_cambio_texto">Cambio de texto</string>
+    <string name="buscador_texto_enviado">Buscando&#8230;</string>
+    <string name="favorito_click">Menu favorito</string>
+    <string name="grupo_click">Menu grupo</string>
+</resources>
