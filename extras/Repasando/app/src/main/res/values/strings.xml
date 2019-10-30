@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Repasando</string>
+    <string name="usuario_hint">Usuario</string>
+    <string name="password_hint">Contraseña</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="bienvenida">Bienvenido al corralito</string>
+    <string name="btn_volver">Volver</string>
+    <string name="fragment_pollito">El pollito dice pio</string>
+    <string name="fragment_perrito">El perrito dice woof</string>
+    <string name="cambiar_animal">Cambiar de animal</string>
+
+</resources>
