@@ -67,18 +67,21 @@ public class MainActivity extends AppCompatActivity {
     private void setMenu(Menu menu){
         getMenuInflater().inflate(R.menu.toolbar_menu, menu);
     }
+
     private SearchView getSearchView(Menu menu){
         MenuItem item = menu.findItem(R.id.icon_search);
         return (SearchView) item.getActionView();
     }
+
     private void setSearchViewHint(SearchView search){
         search.setQueryHint("Escribe algo...");
     }
+
     private void setOnFocusChangeListener(SearchView search){
         search.setOnQueryTextFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
-                Toast.makeText(MainActivity.this, "Cambiando el foco", Toast.LENGTH_SHORT).show();
+                toastMessage("Cambiando el foco");
             }
         });
     }
@@ -86,15 +89,19 @@ public class MainActivity extends AppCompatActivity {
         search.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
-                Toast.makeText(MainActivity.this, "Buscando...", Toast.LENGTH_SHORT).show();
+                toastMessage("Buscando...");
                 return true;
             }
 
             @Override
             public boolean onQueryTextChange(String newText) {
-                Toast.makeText(MainActivity.this, "Estás escribiendo", Toast.LENGTH_SHORT).show();
+                toastMessage("Estás escribiendo");
                 return true;
             }
         });
+    }
+
+    private void toastMessage(String message){
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 }
